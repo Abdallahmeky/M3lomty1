@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>M3lomty</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+   </head>
+   <!-- body -->
+   <style>
+       * {box-sizing: border-box}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+       .a7a
+           {color: aqua;font-size: 47px;padding: 0px;}
+           .white1{font-size: 49px;}
+           p.abc
+           {font-size:22px;}
+       .what{
+  overflow: hidden;
+  background-color: #333;
+           margin-top: 30px;display: block;
+}
+
+/* Navbar links */
+.head_top{
+  
+  
+  color: black;
+  
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+       a:hover{color: aqua;}
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.header {
+  
+  top: 0;
+  height: 110px;
+  width: 100%;
+    background-color: black;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.col-xl-9 col-lg-9 col-md-9 col-sm-9{
+  padding-top: 60px;
+}
+           .#{font-size:22px;}
+           li.nav-item{font-size:442px;}
+       a.#{font-size:44px}
+       .li{font-size: 33px} 
+       /* Hide scrollbar for Chrome, Safari and Opera */
+.example::-webkit-scrollbar {
+  display: none;
+}
+       .hiuouh{font-size: 22px;}
+/* Hide scrollbar for IE, Edge and Firefox */
+.example {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+       *{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  height: 1000px;
+}
+header{
+  
+  z-index: 2;
+  background-color: #333;
+}
+.header-inner{
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo{
+  color: #fff;
+  cursor: default;
+}
+.logo span{
+  color: #FFFF00;
+}
+.bars{
+  font-size: 26px;
+  color: #fff;
+  display: none;
+  cursor: pointer;
+  transition: color 0.6s ease;
+}
+.bars:hover{
+  color: #FFFF00;
+}
+.nav-link{
+  margin-left: 30px;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.6s ease;
+}
+.nav-link:hover{
+  color: #FFFF00;
+}
+.mobile-menu{
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: #222;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  pointer-events: none;
+}
+@media screen and (max-width: 768px){
+  .bars{
+    display: block;
+  }
+  
+  .nav-menu{
+    display: none;
+  }
+  
+  .active{
+  left: 0;
+  transition: left 0.6s ease-in-out;
+  }
+  
+  .nav-link{
+    font-size: 24px;
+    margin: 30px 0;
+  }
+    li.nav-item.hover{color: aqua;}
+     
+    </style>
+    </head>
+   <!-- body -->
+   <body class="main-layout">
+      <!-- loader  -->
+      
+      <!-- end loader -->
+      <!-- header -->
+      <header class="what">
+         <!-- header inner -->
+         <div  class="head_top">
+            <div class="header">
+               <div class="container-fluid">
+                  <div class="row">
+                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                        <div class="full">
+                           <div class="center-desk">
+                              <div class="logo">
+                                 <div class="a7a">M3lomty</div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                        <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                           <span class="navbar-toggler-icon"></span>
+                           </button>
+                           <div class="collapse navbar-collapse" id="navbarsExample04">
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<ul class="navbar-nav mr-auto">
+                                 <li class="nav-item" font_size="2200px">
+                                    <a class="nav-link" href="#contact"font_size="59px">اتصل بنا</a>
+                                 </li>
+                                 <li class="nav-item"font_size="59px">
+                                    <a class="nav-link" href="#about us"font_size="59px">منشوراتنا</a>
+                                 </li>
+                                 <li class="nav-item"font_size="59px">
+                                    <a class="nav-link" href="index.html" font_size="59px"> الرئيسية  </a>
+                                     
+                                 </li>
+                              </ul>
+                           </div>
+                        </nav>
+                     </div>
+                  </div>
+               </div>
+            </div><BR><BR>
+            <!-- end header inner -->
+            <!-- end header -->
+            <!-- banner -->
+            <section class="banner_main">
+               <div class="container">
+                  <div class="row d_flex">
+                     <div class=" col-xl-8 col-lg-8 col-md-8 col-12-9">
+                        <div class="text-bg">
+                           <h1>M3lomty<br><span class="white1">معلوماتك كلها هنا</span></h1>
+                           
+                        </div>
+                     </div>
+                     <div class="col-xl-4 col-lg-4 col-md-4 col-12-3">
+                        
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </div>
+      </header>
+      <!-- end banner -->
+      <!-- blog_main -->
+       <br><BR>
+ <div style="direction: rtl;text-align: right; font-size: 22px;">
+  <h1 style=" font-size: 30px;">معلومات لا تعرفها عن كاس العالم</h1>
+<br><p style="font-size: 21px; color: black;">يعتبر كأس جول ريميه-صاحب فكرة إقامة بطولة كأس العالم لكرة القدم والأب الروحي لها -أول كأس يستخدم في هذه المناسبة، والذي كان يسمى في الأصل بكأس النصر- ولكن تم تغيير اسمه بعد ذلك إلى كأس العالم بالفرنسية Coupe du Monde، رسميًا في عام 1946، تكريمًا لدور رئيس الفيفا، جول ريميه.صمم كأس العالم بواسطة النحات الفرنسي، أبيل لافلور،الذي صنعه من الذهب الخالص ذو قاعدة من الرخام الأبيض، وفي عام 1958 تم استبداله بقاعدة مصنوعة من لازورد الأزرق –حجر كريم- ويبلغ ارتفاعه 35 سنتيمتر ووزنه 3.8 كيلو جرام</p>
+     <P><br><br>
+     <div class="common_divtab" id="tab1">
+                     <h3 style=" font-size: 30px;">كأس العالم 2022</h3>
+<p style=" font-size: 23px;color: black;">في الثاني من ديسمبر، عام 2010،&nbsp; أعلن الاتحاد الدولي لكرة القدم "فيفا" منح قطر شرف استضافة بطولة كأس العالم لكرة القدم لعام 2022؛ وبذلك سيتم تنظيم المسابقة الأكثر جماهيرية على مستوى العالم في منطقة الشرق الأوسط لأول مرة في تاريخ البطولة البالغ 92 عامًا. حيث حظيت قطر بشرف استضافة كأس العالم في الاقتراع الرابع متفوقةً بذلك على إستراليا واليابان وكوريا الجنوبية والولايات المتحدة الأمريكية.</p>
+<p style=" font-size: 23px;color: black;">وامتاز الملف القطري الفائز بشرف التنظيم بتقديم "أفضل تنظيم" لكأس العالم على الإطلاق، حيث تقع جميع الملاعب المقترحة لتنظيم البطولة على بُعد 60 كيلومترًا فقط من بعضها البعض عدا ملعب واحد. وتعهدت اللجنة المُنظمة بدورها بتشييد تسعة ملاعب جديدة وبتجديد ثلاثة ملاعب أخرى؛ وهو الأمر الذي أبهر اللجنة التنفيذية التابعة للاتحاد الدولي لكرة القدم "فيفا" برؤية معمارية فريدة من نوعها بالإضافة إلى خطة طموحة تهدف إلى تسخير طاقة أشعة الشمس والاستفادة منها في إنعاش اللاعبين والجمهور بطريقة صديقة للبيئة.</p>
+<p style=" font-size: 23px;color: black;">وسوف تستضيف دولة قطر خلال البطولة 31 دولة أخرى؛ تتنافس في 64 مباراة يتم افتتاحها وإسدال الستار النهائي عليها في ملعب لوسيل المتميز والذي تم تصميمه خصيصًا لاستضافة كأس العالم وهو يحتوي على بصمة الكربون (خالي من انبعاث الكربون).</p>
+<p style=" font-size: 23px;color: black;">ومن المنتظر أن تترك هذه البطولة تراثًا دائمًا ليس فقط في قطر ولكن في جميع دول العالم بعدما تعهد المنظمون بإعادة تشكيل 9 ملاعب بعد المباريات وتوفير 170000 مقعدًا&nbsp; للدول النامية وذلك بهدف&nbsp; تطوير البنية التحتية الرياضية لديها.</p>
+<h3 style=" font-size: 30px;">تطوير البنية التحتية</h3><br>
+<p style=" font-size: 23px;color: black;">تشمل استراتيجية قطر لاستضافة نهائيات كأس العالم على تطوير مستمر للبنية التحتية؛ وهو الأمر الذي سيؤدي ليس فقط لتمكين الزائرين والمقيمين من الاستمتاع بالبطولة، ولكنه يضع أيضًا حجر الأساس من أجل النمو المستقبلي والتنمية الوطنية.</p>
+<p style=" font-size: 23px;color: black;">وقد تعهدت قطر بإنفاق ما يصل إلى 70 مليار دولار لإنشاء وتوسيع&nbsp; شبكة بنيه تحتية على الطراز العالمي؛ وبالرغم من أن معظم شبكة الطرق الموجودة بدولة قطر تم بناؤها في العشر سنوات الأخيرة، إلا أن&nbsp; الحكومة تعهدت بإنفاق 20 مليار دولار لتوسيع تلك الشبكة حتى عام 2016. وتتضمن هذه التعهدات تشييد طرق رئيسية جديدة تربط  الجديد بكافة المدن القطرية بالإضافة إلى طريق سريع يربطها بجارتها البحرين .</p>
+<p style=" font-size: 23px;color: black;">ليس هذا فحسب؛ بل تقوم قطر لأول مرة بتطوير شبكة سكك حديدية على الطراز العالمي، بعد توقيع شركة السكك الحديد في قطر اتفاقية مع شركة دويتشه بان تقدر بـ 26 مليار دولار في عام 2009. ونصت الاتفاقية على قيام مشروع مشترك لإنشاء شبكه مترو جذابة وصديقه للبيئة في الدوحة، بها أربعة خطوط تربط 98 محطة عبر مسافة تصل إلى 300 كيلومترًا. ونظرًا لما يتطلبه الأمر، سيتم تشغيل الخطوط في أنفاق على مستوى سطح الأرض كسكك حديدية عامة، وستربط مواقع رئيسية مثل مطار حمد الدولي ومنطقه التنمية الحضرية في مدينة لوسيل والمدينة التعليمية والخليج الغربي.</p>
+<p style=" font-size: 23px;color: black;">وتنص الاتفاقية أيضًا على وضع خطط لإنشاء شبكة على مسافات طويلة والتي توفر نقل الركاب والشحن عن طريق خطوط تربطها بالبلاد المجاورة مثل البحرين والسعودية. كما تتضمن شبكه المسافات الطويلة خطًا سريعًا يصل إلى البحرين يصل طوله إلى 180 كيلومترًا بسرعة قصوى تصل إلى 350 كيلومتر في الساعة، بالإضافة إلى خط آخر لنقل الركاب بطول 100 كيلومترًا يصل إلى السعودية بسرعة قصوى تصل إلى 200 كيلومترًا في الساعة. وعمومًا، تستلزم الخطط إنشاء شبكة نقل شحنات يبلغ طولها 325 كيلومترًا، ويتم استخدام 270 كيلومترًا كخدمات للركاب.</p>
+<p style=" font-size: 23px;padding: 3px;color: black;">وفي النهاية، توضح استراتيجيه قطر لتنظيم كأس العالم تصورها لتشييد ما يزيد على 55 ألف فندق لتوفير غرف إضافية كي تتمكن من استيعاب التدفق الزائد في عدد ضيوف كأس العالم. وهناك خطط قائمة بالفعل لمضاعفة عدد الغرف في الفنادق وعدد الشقق من أجل الضيوف بحلول عام 2022&nbsp; لتغطيه المتطلبات الاقتصادية اليومية. وتعتزم الحكومة، كجزء من رؤية قطر الوطنية لسياسات التنوع الاقتصادي حتى عام 2030، المساهمة في استثمارات كبيرة تتجاوز 17 مليار دولار وحدها في السنوات القادمة لكي تزيد من عدد غرف الفنادق الموجودة حاليًا في قطر. كما تعهدت الحكومة ببناء 64 مرفقًا لمعسكرات الفرق والتي تتضمن 32 فندقًا و32 موقع تدريب لاستيعاب كل الفرق.</p></div>
+               </div>
+            </div>
+            <div class="flex_col_sm_5">
+               <div class="detail_card"></div>
+            </div>
+         </div>
+     </P>
+                    <br>
+             <center><div style="align-items: center;background-color: white; align-items: center;">
+                <a href="sign%20up.html" target="_blank" style="color: #0652e2;font-size: 20px;"></a><br><br><h2 style="text-align: center; margin-bottom:  15px;">Comment</h2>
+                 <form style="width: 800px;
+                              border: 2px solid #000000; padding: 15px 10px; align-content: center;align-items: center; background-image:url(images/our_img4.jpg);height: 140px;"><br>
+                    <textarea placeholder="Add your comment" style="height: 20px;width: 100%;border: none;border-bottom: 2px solid #000000;background-color: transparent; margin-bottom: 10px;resize: none;outline: none;"></textarea>
+                     <div>
+                       <input type="submit" value="comment" style=" padding: 10px 15px;border: none;outline: none;border-radius:5px; background-color: #1f6dff;" dirname="">
+                         <button  style=" padding: 10px 15px;border: none;outline: none;border-radius:5px;padding-left: 5px;padding-right: 5px" >cancel</button>
+                     </div>
+                 </form>
+             </div></center>
+             
+      </div><!--  footer -->
+      <footer>
+         <div class="footer">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12 ">
+                     <div class="cont">
+                        <h3> <strong class="multi"> M3lomty website</strong><br>
+                           Landing Page 2022
+                        </h3>
+                     </div>
+                  </div>
+                  <div class="col-md-12">
+                     <ul class="social_icon">
+                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></i></a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="copyright">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <p>© 2022 All Rights Reserved. Design by Abdallah  <a href="https://html.design/">  </a></p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      <!-- end footer -->
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+<script class="nav-item" ></script>
+ <script> Function alert ("your massage has been send");</script>
+<script>// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var what = document.getElementById("what");
+
+// Get the offset position of the navbar
+var sticky = what. offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    what .classList.remove("sticky");
+  }
+}</script>
+   </body>
+</html>
+

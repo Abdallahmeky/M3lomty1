@@ -1,0 +1,515 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       <link rel="shortcut icon" type="images/png" href="images/download1.png">
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>M3lomty</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+   </head>
+   <!-- body -->
+   <style>
+       * {box-sizing: border-box}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+       .a7a
+           {color: aqua;font-size: 47px;padding: 0px;}
+           .white1{font-size: 49px;}
+           p.abc
+           {font-size:22px;}
+       .what{
+  overflow: hidden;
+  background-color: #333;
+           margin-top: 30px;display: block;
+}
+
+/* Navbar links */
+.head_top{
+  
+  
+  color: black;
+  
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+       a:hover{color: aqua;}
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.header {
+  
+  top: 0;
+  height: 10px;
+  width: 100%;
+
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.col-xl-9 col-lg-9 col-md-9 col-sm-9{
+  padding-top: 60px;
+}
+           .#{font-size:22px;}
+           li.nav-item{font-size:442px;}
+       a.#{font-size:44px}
+       .li{font-size: 33px} 
+       /* Hide scrollbar for Chrome, Safari and Opera */
+.example::-webkit-scrollbar {
+  display: none;
+}
+       .hiuouh{font-size: 22px;}
+/* Hide scrollbar for IE, Edge and Firefox */
+.example {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+       *{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  height: 1000px;
+}
+header{
+  
+  z-index: 2;
+  background-color: #333;
+}
+.header-inner{
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo{
+  color: #fff;
+  cursor: default;
+}
+.logo span{
+  color: #FFFF00;
+}
+.bars{
+  font-size: 26px;
+  color: #fff;
+  display: none;
+  cursor: pointer;
+  transition: color 0.6s ease;
+}
+.bars:hover{
+  color: #FFFF00;
+}
+.nav-link{
+  margin-left: 30px;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.6s ease;
+}
+.nav-link:hover{
+  color: #FFFF00;
+}
+.mobile-menu{
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: #222;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  pointer-events: none;
+}
+@media screen and (max-width: 768px){
+  .bars{
+    display: block;
+  }
+  
+  .nav-menu{
+    display: none;
+  }
+  
+  .active{
+  left: 0;
+  transition: left 0.6s ease-in-out;
+  }
+  
+  .nav-link{
+    font-size: 24px;
+    margin: 30px 0;
+  }
+    li.nav-item.hover{color: aqua;}
+     
+    </style>
+    </head>
+   <!-- body -->
+   <body class="main-layout">
+      <!-- loader  -->
+      
+      <!-- end loader -->
+      <!-- header -->
+      <header class="what">
+         <!-- header inner -->
+         <div  class="head_top">
+            <div class="header">
+               <div class="container-fluid">
+                  <div class="row">
+                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                        <div class="full">
+                           <div class="center-desk">
+                              <div class="logo">
+                                 <div class="a7a">M3lomty</div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                        <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                           <span class="navbar-toggler-icon"></span>
+                           </button>
+                           <div class="collapse navbar-collapse" id="navbarsExample04">
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<ul class="navbar-nav mr-auto">
+                                 <li class="nav-item" font_size="2200px">
+                                    <a class="nav-link" href="#contact"font_size="59px">اتصل بنا</a>
+                                 </li>
+                                 <li class="nav-item"font_size="59px">
+                                    <a class="nav-link" href="#about us"font_size="59px"> الرئيسية </a>
+                                 </li>
+                                
+                              </ul>
+                           </div>
+                        </nav>
+                     </div>
+                  </div>
+               </div>
+            </div><BR><BR><br>
+            <!-- end header inner -->
+            <!-- end header -->
+            
+             
+            <!-- banner -->
+            <section class="banner_main">
+               <div class="container">
+                  <div class="row d_flex">
+                     <div class=" col-xl-8 col-lg-8 col-md-8 col-12-9">
+                        <div class="text-bg">
+                           <h1>M3lomty<br><span class="white1">معلوماتك كلها هنا</span></h1>
+                           
+                        </div>
+                     </div>
+                     <div class="col-xl-4 col-lg-4 col-md-4 col-12-3">
+                        
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </div>
+      </header><br><br>
+      <!-- end banner -->
+<div style="text-align: right;">
+    
+
+    
+            
+            <!--googleoff: all--><h2 style="font-size: 31px;">نظرة عامة</h2><!--googleon: all--><div class=" access-modal right p-3">
+
+
+<!--googleoff: all-->
+
+
+   
+
+	
+</button>
+
+<!--googleon: all-->
+<div class="dialog-backdrop">
+	<div id="dialogId14358448" role="dialog" aria-labelledby="label14358448" aria-modal="true" class="hidden" data-url-tracking="true">
+		<div class="image-lightbox-container">
+			<!--googleoff: all-->
+			<div class="dialog_form_actions lightbox-close">
+				<button class="modal-close" onclick="closeDialog(this, event)">
+					 
+					
+				</button>
+			</div>
+			<!--googleon: all-->
+			<h3 id="label14358448" tabindex="-1" class="myc-visuallyhidden">فيروس كورونا</h3>
+			<img src="images/coronovirus-8col.webp" alt="فيروس كورونا">
+<br><br>
+			<div class="text lightbox-text">
+				<h1 aria-hidden="true">فيروس كورونا</h1>
+				<p class="caption" style="font-size: 18px;color: black;"><p style="font-size: 18px;color: black;">فيروس كورونا هو مجموعة من الفيروسات التي يمكن أن تسبب أمراض الجهاز التنفسي، مثل الزكام والالتهاب التنفسي الحاد الوخيم (سارز) ومتلازمة الشرق الأوسط التنفسية (ميرز).</p></p>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+
+<p dir="rtl" style="font-size: 18px;color: black;">فيروسات كورونا هي عائلة من الفيروسات التي يمكنها أن تسبب أمراضًا مثل الزكام والالتهاب التنفُّسي الحاد الوخيم (السارس) ومتلازمة الشرق الأوسط التنفُّسية (ميرس). في عام 2019، اُكتشِف نوع جديد من فيروسات كورونا تسبب في تفشي مرض كان منشأه في الصين.</p>
+
+<p dir="rtl" style="font-size: 18px;color: black;">يُعرَف الفيروس باسم فيروس المتلازمة التنفسية الحادة الوخيمة كورونا 2 (سارس-كوف-2). ويُسمَّى المرض الناتج عنه مرض فيروس كورونا المستجد 2019 (كوفيد 19). في مارس 2020، أعلنت منظمة الصحة العالمية أن فيروس كورونا <abbr title="مرض فيروس كورونا 2019" dir="rtl">(كوفيد 19)</abbr> قد أصبح جائحة عالمية.</p><div id="ad-mobile-top-container"></div>
+
+<p dir="rtl" style="font-size: 18px;color: black;">تعكف مجموعات الصحة العامة، ومن بينها مركز مكافحة الأمراض والوقاية منها في الولايات المتحدة <abbr title="منظمة الصحة العالمية" dir="rtl">ومنظمة الصحة العالمية</abbr> على متابعة جائحة <abbr title="مرض فيروس كورونا 2019" dir="rtl">كوفيد 19</abbr> ونشر آخر المستجدات على مواقعها عبر الإنترنت. كما أصدرت هذه المنظمات توصيات حول الوقاية من الفيروس المسبب لمرض <abbr title="مرض فيروس كورونا 2019" dir="rtl">كوفيد 19</abbr> وعلاجه.</p><!--googleoff: all--><div class='acces-list-container rc-list'><h3></h3></div><!--googleon: all-->
+        
+            
+
+<div>
+    <div>
+        
+    </div>
+
+</div>
+
+            
+        
+            
+            <h2 style="font-size: 24px;">الأعراض</h2><p dir="rtl" style="font-size: 18px;color: black;">قد تظهر مؤشرات مرض فيروس كورونا المستجد 2019 (كوفيد 19) وأعراضه بعد يومين إلى 14 يومًا من التعرُّض له. وتسمى هذه الفترة التي تلي التعرُّض للفيروس وتسبق ظهور الأعراض بفترة الحضانة. يظل بإمكانك نشر عدوى <abbr title="مرض فيروس كورونا 2019" dir="rtl"style="font-size: 18px;color: black;">فيروس كوفيد 19</abbr> قبل أن تظهر عليك الأعراض. وقد تشتمل مؤشرات المرض والأعراض الشائعة:</p>
+<ul dir="rtl"style="font-size: 18px;color: black;">
+    <li dir="rtl"style="font-size: 18px;color: black;">الحُمَّى</li>
+    <li dir="rtl"style="font-size: 18px;color: black;">السعال</li>
+    <li dir="rtl"style="font-size: 18px;color: black;">الشعور بالتعب</li>
+</ul>
+<p dir="rtl"style="font-size: 18px;color: black;">قد تتضمن الأعراض المبكرة لفيروس <abbr title="مرض فيروس كورونا 2019" dir="rtl">كوفيد-19</abbr> فقدان حاسة التذوق أو الشم.</p>
+<p dir="rtl"style="font-size: 18px;color: black;">ومن الأعراض الأخرى ما يلي:</p>
+<ul dir="rtl"style="font-size: 18px;color: black;">
+    <li dir="rtl"style="font-size: 18px;color: black;">ضيق النفس أو صعوبة في التنفس</li>
+    <li dir="rtl"style="font-size: 18px;color: black;">آلام في العضلات</li>
+    <li dir="rtl"style="font-size: 18px;color: black;">القشعريرة</li>
+    <li dir="rtl"style="font-size: 18px;color: black;">التهاب الحلق</li>
+<li dir="rtl"style="font-size: 18px;color: black;">سيلان الأنف</li>
+<li dir="rtl"style="font-size: 18px;color: black;">الصداع</li>
+<li dir="rtl"style="font-size: 18px;color: black;">ألم الصدر</li>
+<li dir="rtl"style="font-size: 18px;color: black;">احمرار العين (التهاب المُلتحِمة)</li>
+<li dir="rtl"style="font-size: 18px;color: black;">الغثيان</li>
+<li dir="rtl"style="font-size: 18px;color: black;">القيء</li>
+<li dir="rtl"style="font-size: 18px;color: black;">الإسهال</li>
+<li dir="rtl"style="font-size: 18px;color: black;">الطفح الجلدي</li>
+</ul>
+
+<p dir="rtl"style="font-size: 18px;color: black;">ولا تشمل هذه القائمة جميع الأعراض. يُصاب الأطفال بأعراض مشابهة لأعراض البالغين، ويُصابون عمومًا بتوعك خفيف.</p>
+
+<p dir="rtl"style="font-size: 18px;color: black;">ومن الممكن أن تتراوح حدة أعراض <abbr title="مرض فيروس كورونا 2019" dir="rtl"style="font-size: 18px;color: black;">كوفيد 19</abbr> بين خفيفة جدًّا إلى حادة. فبعض الأشخاص لا يُصابون سوى بأعراض قليلة. وقد لا يُصاب آخرون بأي أعراض على الإطلاق، ومع هذا فيمكنهم نشر المرض (نقل المرض دون ظهور الأعراض عليهم). وقد تتفاقم الأعراض، مثل ضيق النفس والتهاب الرئة لدى بعض الأشخاص بعد بداية ظهور الأعراض بأسبوع تقريبًا.</p>
+
+<p dir="rtl"style="font-size: 18px;color: black;">تصيب أعراض <abbr title="مرض فيروس كورونا 2019" dir="rtl"style="font-size: 18px;color: black;">كوفيد 19</abbr> بعض الناس لمدة تزيد عن أربعة أسابيع بعد التشخيص. ويُشار إلى هذه المشاكل الصحية أحيانًا باسم حالات ما بعد <abbr title="مرض فيروس كورونا 2019" dir="rtl"style="font-size: 18px;color: black;">كوفيد 19</abbr>. ويُصاب بعض الأطفال بمتلازمة التهاب الأجهزة المتعددة، وهي متلازمة يمكنها أن تؤثر في عدد من الأعضاء والأنسجة، بعد عدة أسابيع من الإصابة بفيروس <abbr title="مرض فيروس كورونا 2019" dir="rtl"style="font-size: 18px;color: black;">كوفيد 19</abbr>. وفي حالات نادرة، قد يُصاب بعض البالغين بهذه المتلازمة أيضًا.</p>
+
+
+<p dir="rtl"style="font-size: 18px;color: black;">تزداد مخاطر الإصابة بأعراض حادة جراء الإصابة بفيروس <abbr title="مرض فيروس كورونا 2019" dir="rtl"style="font-size: 18px;color: black;">كوفيد-19</abbr> لدى كبار السن، وتزداد المخاطر مع التقدم في العمر. وقد تزداد خطورة المرض أيضًا لدى المصابين بحالات مرضية أخرى. هناك حالات مرضية معينة قد تزيد من خطر الإصابة بأعراض حادة نتيجة الإصابة بفيروس <abbr title="مرض فيروس كورونا 2019" dir="rtl"style="font-size: 18px;color: black;">كوفيد-19</abbr>، والتي تتضمن:</p>
+
+
+
+<ul dir="rtl"style="font-size: 18px;color: black;">
+<li dir="rtl"style="font-size: 18px;color: black;">أمراض القلب الخطيرة، مثل فشل القلب أو مرض الشريان التاجي أو اعتلال عضلة القلب</li>
+<li dir="rtl"style="font-size: 18px;color: black;">السرطان</li>
+<li dir="rtl"style="font-size: 18px;color: black;">داء الانسداد الرئوي المزمن</li>
+<li dir="rtl"style="font-size: 18px;color: black;">الإصابة بداء السكري من النوع الأول أو الثاني</li>
+<li dir="rtl"style="font-size: 18px;color: black;">السمنة</li>
+<li dir="rtl"style="font-size: 18px;color: black;">ارتفاع ضغط الدم</li>
+<li dir="rtl"style="font-size: 18px;color: black;">التدخين</li>
+<li dir="rtl"style="font-size: 18px;color: black;">مرض الكلى المزمن</li>
+<li dir="rtl"style="font-size: 18px;color: black;">مرض الخلايا المنجلية أو الثلاسيمية</li>
+<li dir="rtl"style="font-size: 18px;color: black;">ضعف الجهاز المناعي الناتج عن زراعة الأعضاء المصمتة وزراعة نخاع العظم</li>
+<li dir="rtl"style="font-size: 18px;color: black;">الحمل</li>
+<li dir="rtl"style="font-size: 18px;color: black;">الربو</li>
+<li dir="rtl"style="font-size: 18px;color: black;">الأمراض الرئوية المزمنة، مثل التليف الكيسي أو فرط ضغط الدم الرئوي</li>
+<li dir="rtl"style="font-size: 18px;color: black;">أمراض الكبد</li>
+<li dir="rtl"style="font-size: 18px;color: black;"style="font-size: 18px;color: black;">الخَرَف</li>
+<li dir="rtl"style="font-size: 18px;color: black;">متلازمة داون</li>
+<li dir="rtl"style="font-size: 18px;color: black;">ضعف الجهاز المناعي الناتج عن زراعة نخاع العظم أو فيروس نقص المناعة البشري أو بعض الأدوية</li>
+<li dir="rtl"style="font-size: 18px;color: black;">الحالات المرضية المتعلقة بالدماغ والجهاز العصبي، مثل السكتات الدماغية</li>
+<li dir="rtl"style="font-size: 18px;color: black;">اضطرابات إساءة استخدام الأدوية</li>
+</ul>
+
+<p dir="rtl"style="font-size: 18px;color: black;">ولا تشمل هذه القائمة جميع الأعراض. وهناك حالات مرضية أخرى قد تزيد من خطر الإصابة بأعراض حادة نتيجة للعدوى بفيروس <abbr title="مرض فيروس كورونا 2019" dir="rtl">كوفيد 19</abbr>.</p>
+<a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/coronavirus-self-checker.html"  id="et-internalPromo-2AA31AA0" class="linkbox no-border bg">
+
+<h3>
+أداة الفحص الذاتي لكوفيد 19
+</h3>
+
+
+
+<span class="action"style="font-size: 18px;color: black;">قيّم أعراضك باستخدام أداة الفحص الذاتي لفيروس كورونا والتي توفرها مراكز مكافحة الأمراض والوقاية منها، واكتشف ما إذا كنت مرشحاً لإجراء اختبار كوفيد 19.</span>
+
+</a>
+
+
+
+        
+            
+            <h1>متى تزور الطبيب؟</h1><p dir="rtl"style="font-size: 18px;color: black;">إذا ظهرت عليك مؤشرات مرض <abbr title="مرض فيروس كورونا 2019" dir="rtl"style="font-size: 18px;color: black;">كوفيد 19</abbr> أو أعراضه، أو إذا كنت مخالطًا لمن شُخصت إصابته بمرض <abbr title="مرض فيروس كورونا 2019" dir="rtl"style="font-size: 18px;color: black;">كوفيد 19</abbr>، فاتصل بطبيبك على الفور لطلب المشورة الطبية. ومن المرجح أن يوصيك الطبيب بإجراء اختبار للكشف عن الإصابة بفيروس <abbr title="مرض فيروس كورونا 2019" dir="rtl"style="font-size: 18px;color: black;">كوفيد 19</abbr>.  وإذا ظهرت عليك مؤشرات طارئة لفيروس <abbr title="مرض فيروس كورونا 2019" dir="rtl"style="font-size: 18px;color: black;">كوفيد 19</abbr> مثل صعوبة التنفس، فاطلب الرعاية الطبية على الفور. وإذا تطلب الأمر الذهاب إلى المستشفى، فاتصل به سابقًا حتى يمكن للطبيب اتخاذ الاحتياطات اللازمة لضمان عدم تعرض الآخرين للفيروس.</p>
+
+
+<p dir="rtl"style="font-size: 18px;color: black;">وإذا كانت لديك مؤشرات طارئة لمرض <abbr title="مرض فيروس كورونا 2019" dir="rtl">كوفيد 19</abbr> وأعراضه، فاطلب الرعاية الطبية فورًا. وقد تشمل هذه العلامات والأعراض الطارئة ما يلي:</p>
+<ul dir="rtl"style="font-size: 18px;color: black;"style="font-size: 18px;color: black;">
+<li dir="rtl"style="font-size: 18px;color: black;">صعوبة في التنفس</li>
+<li dir="rtl"style="font-size: 18px;color: black;">ألم أو ضغط مستمر بالصدر</li>
+<li dir="rtl"style="font-size: 18px;color: black;">عدم القدرة على البقاء يقظًا</li>
+<li dir="rtl"style="font-size: 18px;color: black;">تشوُّش لم يكن موجودًا من قبل</li>
+<li dir="rtl"style="font-size: 18px;color: black;">شحوب الجلد والشفاه وقواعد الأظافر أو تغير ألوانها إلى الرمادي أو الأزرق، حسب درجة لون الجلد</li>
+</ul>
+
+<p dir="rtl"style="font-size: 18px;color: black;">وهذه القائمة ليست كاملة. أخبر الطبيب إذا كنت من البالغين كبار السن أو لديك حالات طبية مزمنة، مثل مرض القلب أو مرض الرئة، إذ قد تكون أكثر عرضة للإصابة بأعراض شديدة نتيجة مرض فيروس <abbr title="مرض فيروس كورونا 2019" dir="rtl">كوفيد 19</abbr>.</p><br><BR>
+          <div>
+              <h1>متحوّرات فيروس كورونا</h1>
+              <img src="images/61a784344c59b74ac7292da4.png" style="padding: 10px;"><br><br><BR>
+              <h2>ظهرت عدة سلالات من SARS-CoV-2، الفيروس التاجي المسبب لمرض "كوفيد-19"، في جميع أنحاء العالم. وتتحوّر الفيروسات طوال الوقت، لذا لم تكن الاختلافات الجديدة مفاجئة.</h2>
+              <p style="font-size: 18px;color: black;">ومع ذلك، عندما تصبح النسخة المعدلة "سلالة سائدة" في منطقة ذات سمات مقلقة، يقوم خبراء الصحة العامة بتسمية هذه الإصدارات ومتابعتها. ويُظهر العديد من طفرات SARS-CoV-2 تعديلات على البروتين الشائك للفيروس - والذي يستخدمه للالتصاق بالخلايا البشرية وغزوها. وعلى هذا النحو، أدت الطفرات الجينية المختلفة في بعض الحالات إلى زيادة قابلية الانتقال، وربما شدة المرض المرتبط بهذه المتغيرات المعينة.</p><br>
+              <p style="font-size: 18px;color: black;">وفيما يلي نظرة على العلم وراء متغيّرات SARS-CoV-2، وأيها أكثر إثارة للقلق في المجالات المختلفة، وفقا لتقرير "لايف ساينس".</p>
+              <h1>المتغيرات المثيرة للقلق</h1><br>
+              <h2>- متحوّر ألفا (B.1.1.7)</h2>
+              <p style="font-size: 18px;color: black;">شوهد متحوّر ألفا، المعروف سابقا باسم B.1.1.7، لأول مرة في المملكة المتحدة في سبتمبر 2020، وفقا لمنظمة الصحة العالمية (WHO). وبحلول ديسمبر 2020، ظهر في الولايات المتحدة.
+<br>
+وانتشر المتحوّر إلى 114 دولة على الأقل، وفقا لشبكة الفيروسات العالمية، وهو مسؤول عن حوالي 95٪ من الإصابات الجديدة بـ "كوفيد-19" في المملكة المتحدة بين 23 مايو و5 يونيو 2021. وحوالي 60٪ من إجمالي الحالات في الولايات المتحدة كانت مرتبطة بمتحوّر ألفا، حسبما أفاد مركز السيطرة على الأمراض.</p>
+              <h2>ما هي الطفرات الرئيسية؟</h2>
+              <P style="font-size: 18px;color: black;">حتوي متحوّر ألفا على 23 طفرة مقارنة بسلالة ووهان الأصلية، مع ثمانية من تلك الموجودة في البروتين الشائك للفيروس، وفقا للجمعية الأمريكية لعلم الأحياء الدقيقة (ASM). ويُعتقد أن ثلاثة من طفرات البروتين الشائك مسؤولة عن أكبر تأثير على بيولوجيا الفيروس: يبدو أن طفرة N501Y تعزز مدى إحكام ارتباط البروتين الشائك بمستقبلات ACE2 - نقطة الدخول الرئيسية إلى الخلايا البشرية؛ يمكن للطفرة 69-70del، بالتنسيق مع N501Y، تفسير زيادة قابلية انتقال المتغير، كما يقول بعض العلماء؛ وطفرة P681H يمكن أن تزيد أيضا من قابلية الانتقال، حيث قد تكون متورطة في كيفية دمج الفيروس مع غشاء خلية بشرية من أجل إيصال جينومه إلى الخلية، وفقا لـ ASM.</P>
+          </div>
+<div class="contentbox no-border">
+             
+      <footer>
+         <div class="footer">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12 ">
+                     <div class="cont">
+                        <h3> <strong class="multi"> M3lomty website</strong><br>
+                           Landing Page 2022
+                        </h3>
+                     </div>
+                  </div>
+                  <div class="col-md-12">
+                     <ul class="social_icon">
+                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></i></a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="copyright">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <p>© 2022 All Rights Reserved. Design by Abdallah  <a href="https://html.design/">  </a></p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      <!-- end footer -->
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+<script class="nav-item" ></script>
+ <script> Function alert ("your massage has been send");</script>
+<script>// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var what = document.getElementById("what");
+
+// Get the offset position of the navbar
+var sticky = what. offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    what .classList.remove("sticky");
+  }
+}</script>
+   </body>
+</html>

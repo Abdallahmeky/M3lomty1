@@ -1,0 +1,471 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       <link rel="shortcut icon" type="images/png" href="images/download1.png">
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>M3lomty</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+   </head>
+   <!-- body -->
+   <style>
+       * {box-sizing: border-box}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+       .a7a
+           {color: aqua;font-size: 47px;padding: 0px;}
+           .white1{font-size: 49px;}
+           p.abc
+           {font-size:22px;}
+       .what{
+  overflow: hidden;
+  
+           margin-top: 30px;display: block;
+}
+
+/* Navbar links */
+.head_top{
+  
+  
+
+  
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+       a:hover{color: aqua;}
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.header {
+  
+  top: 0;
+  height: 110px;
+  width: 100%;
+   
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.col-xl-9 col-lg-9 col-md-9 col-sm-9{
+  padding-top: 60px;
+}
+           .#{font-size:22px;}
+           li.nav-item{font-size:442px;}
+       a.#{font-size:44px}
+       .li{font-size: 33px} 
+       /* Hide scrollbar for Chrome, Safari and Opera */
+.example::-webkit-scrollbar {
+  display: none;
+}
+       .hiuouh{font-size: 22px;}
+/* Hide scrollbar for IE, Edge and Firefox */
+.example {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+       *{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  height: 1000px;
+}
+header{
+  
+  z-index: 2;
+  background-color: #333;
+}
+.header-inner{
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo{
+  color: #fff;
+  cursor: default;
+}
+.logo span{
+  color: #FFFF00;
+}
+.bars{
+  font-size: 26px;
+  color: #fff;
+  display: none;
+  cursor: pointer;
+  transition: color 0.6s ease;
+}
+.bars:hover{
+  color: #FFFF00;
+}
+.nav-link{
+  margin-left: 30px;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.6s ease;
+}
+.nav-link:hover{
+  color: #FFFF00;
+}
+.mobile-menu{
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: #222;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  pointer-events: none;
+}
+@media screen and (max-width: 768px){
+  .bars{
+    display: block;
+  }
+  
+  .nav-menu{
+    display: none;
+  }
+  
+  .active{
+  left: 0;
+  transition: left 0.6s ease-in-out;
+  }
+  
+  .nav-link{
+    font-size: 24px;
+    margin: 30px 0;
+  }
+    li.nav-item.hover{color: aqua;}
+     
+    </style>
+    </head>
+   <!-- body -->
+   <body class="main-layout">
+      <!-- loader  -->
+      
+      <!-- end loader -->
+      <!-- header -->
+      <header class="what">
+         <!-- header inner -->
+         <div  class="head_top">
+            <div class="header">
+               <div class="container-fluid">
+                  <div class="row">
+                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                        <div class="full">
+                           <div class="center-desk">
+                              <div class="logo">
+                                 <div class="a7a">M3lomty</div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                        <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                           <span class="navbar-toggler-icon"></span>
+                           </button>
+                           <div class="collapse navbar-collapse" id="navbarsExample04">
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<ul class="navbar-nav mr-auto">
+                                 <li class="nav-item" font_size="2200px">
+                                    <a class="nav-link" href="#contact"font_size="59px">اتصل بنا</a>
+                                 </li>
+                                 <li class="nav-item"font_size="59px">
+                                    <a class="nav-link" href="#about us"font_size="59px">منشوراتنا</a>
+                                 </li>
+                                 <li class="nav-item"font_size="59px">
+                                    <a class="nav-link" href="index.html" font_size="59px"> الرئيسية  </a>
+                                     
+                                 </li>
+                              </ul>
+                           </div>
+                        </nav>
+                     </div>
+                  </div>
+               </div>
+            </div><BR><BR>
+            <!-- end header inner -->
+            <!-- end header -->
+            
+             
+            <!-- banner -->
+            <section class="banner_main">
+               <div class="container">
+                  <div class="row d_flex">
+                     <div class=" col-xl-8 col-lg-8 col-md-8 col-12-9">
+                        <div class="text-bg">
+                           <h1>M3lomty<br><span class="white1">معلوماتك كلها هنا</span></h1>
+                           
+                        </div>
+                     </div>
+                     <div class="col-xl-4 col-lg-4 col-md-4 col-12-3">
+                        
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </div>
+      </header><br><br>
+      <!-- end banner -->
+           <center> <div style="align-items: center;">
+                 <img src="images/LG400.jpg" style="align-items: center; background-repeat: no-repeat; text-align: center;">
+             </div></center> <br><br><br>
+          <div style="text-align: right; ">
+              <h1 style="font-size: 36px;color: #009dff;">مقدمه عن اللغه العربيه</h1> <br>
+              <p style="font-size: 22px; color: black;">، تتضمن هذه الصفحه عن اللغه العربيه من حيث تاريخها ،عدد المتحدثين بها وخصائصها والتحديات التى واجهتا وغير ذلك</p>
+              <p style="font-size: 22px; color: black;">وتصنف اللغة العربية من أصعب اللغات تعلماً حول العالم نظراً لكثرة مرادفاتها وتعدد معاني المفردات في مواضع الجمل.</p>
+              <p style="font-size: 22px; color: black;">هي اسم مشتق من الإعراب عن الشيء والإفصاح عنه وتعني من حيث الاشتقاق لغة الفصاحة.</p>
+<p style="font-size: 22px; color: black;">وساهم في انتشار اللغة العربية الدعوة الإسلامية خاصة أنها لغة القرآن الكريم والسنة النبوية الشريفة.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+            <h3 style="font-size: 36px;color: #009dff;"><span>معلومات عامة عن اللغة العربية</span></h3>  
+            <p style="font-size: 22px; color: black;">وتصنف في المرتبة الرابعة من حيث عدد المتحدثين بها عبر الانترنت ومن ضمن اللغات الستة المعتمدة في الأمم المتحدة.</p>
+<p style="font-size: 22px; color: black;">وتحوي اللغة العربية على ٢٨ حرفاً إضافة إلى الهمزة التي تعتبر الحرف التاسع والعشرين من قبل الكثير من اللغويين العرب.</p>
+              <p style="font-size: 22px; color: black;">وتعتبر اللغة العربية لغة مقدسة لدى المسلمين حول العالم لأنها لغة القرآن الكريم حيث يدين بالديانة الاسلامية أكثر من (مليار ونصف) إنسان حول العالم.</p>
+<p>&nbsp;</p>
+<h3 style="font-size: 36px;color: #009dff;"><span>من يتحدث باللغة العربية؟</span></h3>
+<p style="font-size: 22px; color: black;">يتحدث باللغة العربية أكثر من467 مليون إنسان حول العالم حيث تعتبر اللغة العربية اللغة الرسمية في الدول العربية.</p>
+        <p>&nbsp;</p>
+<h3 style="font-size: 36px;color: #009dff;"><span>تاريخ اللغة العربية</span></h3>
+<p style="font-size: 22px; color: black;">تعد اللغة العربية من أقدم لغات العالم حيث تعود إلى أبناء سام بن نوح أي أنها لغة سامية وفق التصنيفات.</p>  <p style="font-size: 22px; color: black;">ونشأت الكثير من الأحداث التي ساهمت في الحفاظ على اللغة العربية وأدت الى ظهور اللغة العربية الفصحى وأبرزها سوق عكاظ الذي كان عبارة عن ملتقى للشعر والفصاحة باللغة العربية.</p>
+<p style="font-size: 22px; color: black;">ولقيت اللغة العربية اهتماماً بالغاً بين الشعوب لأنها لغة القرآن الكريم وهو الكتاب المقدس لدى المسلمين.</p>
+<p style="font-size: 22px; color: black;">كما تعتبر اللغة الرسمية للشعوب العربية من المحيط الأطلسي غرباً إلى الخليج العربي شرقاً مما يؤكد مكانة وأهمية اللغة العربية.</p>
+<p>&nbsp;</p>
+<h1 style="font-size: 36px;color: #009dff;">اهميه اللغه العربيه</h1>
+<p style="font-size: 22px; color: black;">للغة العربية أهمية بالغة منذ القدم وإلى الآن نظراً للعدد الكبير الذي يتحدث بها وكون أنّ فهم الثقافة الإسلامية يكون من بوابة اللغة العربية.</p>
+<p style="font-size: 22px; color: black;">وتعد وسيلة لقراءة “القرآن الكريم” الذي يعد الكتاب المقدس لدى المسلمين الذي يبلغ تعدادهم مايزيد على مليار ونصف انسان منتشرين في شتى أنحاء العالم.</p>
+<p style="font-size: 22px; color: black;">وكذلك تعد اللغة العربية وسيلة لفهم أحاديث الرسول محمد (رسول المسلمين) حيث كان يتحدث باللغة العربية.</p>
+<p style="font-size: 22px; color: black;">وتمكّن اللغة العربية متحدثيها من فهم القضايا العربية والإسلامية حول العالم فهي أصل الثقافة الإسلامية والعربية.</p>
+<p>&nbsp;</p>
+<h3 style="font-size: 36px;color: #009dff;"><span>خصائص اللغة العربية</span></h3>
+<p style="font-size: 22px; color: black;">تتحلى اللغة العربية بخصائص ومميزات متعددة تميزها عن عن الكثير من اللغات.</p><br>
+<p style="font-size: 22px; color: black;">ومن أبرز خصائص اللغة العربية ما يلي:</p><br>
+<ul style="font-size: 19px; color: black;">
+<li style="font-size: 19px; color: black;">مخارج حروفها تتوزع من الشفتين وحتى أقصى الحلق مما يسهم في تنوع هذه المخارج وتنوعها.</li>
+<li style="font-size: 19px; color: black;">تمتاز اللغة العربية بإمكانية اشتقاق كلمات جديدة من مفرداتها بحيث تستخدم طبقاً للمعنى في أصل واحد.</li>
+<li style="font-size: 19px; color: black;">تختلف اللغة العربية عن بقية اللغات من حيث الصياغة البنية اللغوية والوزن.</li>
+<li style="font-size: 19px; color: black;">تحتوي على الكثير من الدلالات و العبارات المجازية.</li>
+<li style="font-size: 19px; color: black;">تتعدد معاني ومصلحات اللغة العربية وتحتوي على اصطلاحات وعبارات تشبيهية مما يجعلها لغة مميزة في الشعر والنثر.</li>
+</ul>
+<p>&nbsp;</p>
+<h3 style="font-size: 36px;color: #009dff;"><span>أقسام اللغة العربية</span></h3>
+<p style="font-size: 22px; color: black;">تنقسم اللغة إلى ثلاثة أقسام رئيسية وكل قسم يتضمن عدة علوم وهي وفق التالي:</p>
+<div class="ltuf ltuf-post-middle ltuf-float-center ltuf-align-center ltuf-column-1 ltuf-clearfix no-bg-box-model"></div> <h4><span id="frw_allght_walklam">فروع اللغة والكلام</span></h4>
+<p style="font-size: 22px; color: black;">ويتضمن هذا القسم عدة علوم وأبرزها:</p>
+<ul class="bs-shortcode-list list-style-asterisk">
+<li style="font-size: 19px; color: black;"><a>علم النحو</a>.</li>
+<li style="font-size: 19px; color: black;">علم الصرف.</li>
+<li  style="font-size: 19px; color: black">علم البلاغة.</li>
+<li  style="font-size: 19px; color: black;">علم الإملاء.</li>
+<li  style="font-size: 19px; color: black;">علم الأصوات.</li>
+</ul>
+<h4 style="font-size: 36px;color: #009dff;"><span>فروع أصول اللغة</span></h4>
+<p style="font-size: 22px; color: black;">وتنقسم علوم أصول اللغة العربية إلى ما يلي:</p>
+<ul>
+<li style="font-size: 19px; color: black;">علم اللغة.</li>
+<li style="font-size: 19px; color: black;">المعاجم العربية.</li>
+<li style="font-size: 19px; color: black;">علم الدلالة.</li>
+<li style="font-size: 19px; color: black;">علم اللهجات العربية.</li>
+</ul>
+<h4 style="font-size: 36px;color: #009dff;"><span>العلوم الأدبية والشعر</span></h4>
+<p style="font-size: 22px; color: black;">وتنقسم أيضاً إلى عدة فروع وهي:</p>
+<ul>
+<li style="font-size: 19px; color: black;">النصوص العربية.</li>
+<li style="font-size: 19px; color: black;">تاريخ الأدب العربي.</li>
+<li style="font-size: 19px; color: black;">العروض والقافية.</li>
+<li style="font-size: 19px; color: black;">النقد الأدبي.</li>
+<li style="font-size: 19px; color: black;">الأدب المقارن.</li>
+</ul>
+<p>&nbsp;</p>
+<h3 style="font-size: 36px;color: #009dff;"><span>أبرز التحديات التي تواجه اللغة العربية</span></h3>
+<p style="font-size: 22px; color: black;">إن أبرز التحديات التي تواجه اللغة العربية وخاصة في العصر الحديث ما يلي:</p>
+<ul style="font-size: 19px; color: black;">
+<li style="font-size: 19px; color: black;">اللجوء لاستخدام اللهجات المحلية العامية بدلاً عن اللغة العربية الرسمية.</li>
+<li style="font-size: 19px; color: black;">تعدد الأخطاء اللغوية في الكتابة والمحادثة.</li>
+<li style="font-size: 19px; color: black;">استخدام اللغات الأجنبية في بعض الجامعات أو بعض الكليات التعليمية.</li>
+<li style="font-size: 19px; color: black;">إدخال مفردات ومصطلحات أجنبية بمعناها في اللغة المنقول منها بشكل حرفي في سياق الحديث.</li>
+</ul>
+<p>&nbsp;</p>              
+<h3 style="font-size: 36px;color: #009dff;"><span>شعر عن اللغة العربية</span></h3>
+<p style="font-size: 22px; color: black;">قال الشعراء الكثير من الشعر في اللغة العربية بعضهم تغزل في اللغة وميزها بالوصف ونظم أشعاراً باللغة العربية.</p>
+<p style="font-size: 22px; color: black;">ومنهم وديع عقل بن شديد وهو صحفي وشاعر لبناني وقال باللغة العربية الأبيات التالية:</p>
+<p style="text-align: center;font-size: 22px; color: black;">لا تقل عن لغتي أم اللغات   ***   إنها تبرأ من تلك البنات</p>
+<p style="text-align: center;font-size: 22px; color: black;">لغتي أكرم أم لم تلد   ***   لذويها العرب غير المكرمات</p>
+<p style="text-align: center;font-size: 22px; color: black;">ما رأت للضاد عيني أثراً   ***   في لغات الغرب ذات الثغثغات</p>
+<p style="text-align: center;font-size: 22px; color: black;">إن ربي خلق الضاد وقد   ***   خصها بالحسنات الخالدات</p>
+<p style="text-align: center;font-size: 22px; color: black;">وعدا عاد من الغرب على   ***   أرضنا بالغزوات الموبقات</p>
+<p style="text-align: center;font-size: 22px; color: black;">ملك البيت وأمسى ربه   ***   وطوى الرزق وأودى بالحياة</p>
+<p style="text-align: center;font-size: 22px; color: black;">هاجم الضاد فكانت معقلاً   ***   ثابتاً في وجهه كل الثبات</p>
+<p style="text-align: center;font-size: 22px; color: black;">معقل رد دواهيه فما باء   ***   إلا بالأماني الخائبات</p>
+<p style="text-align: center;font-size: 22px; color: black;">أيها العرب حمى معقلكم   ***   ربكم من شر تلك النائبات</p>
+<p style="text-align: center;font-size: 22px; color: black;">إن يوماً تجرح الضاد به   ***   هو والله لكم يوم الممات</p>
+<p style="text-align: center;font-size: 22px; color: black;">أيها العرب إذا ضاقت بكم   ***   مدن الشرق لهول العاديات</p>
+<p style="text-align: center;font-size: 22px; color: black;">فاحذروا أن تخسروا الضاد ولو   ***   دحرجوكم معها في الفلوات</p>
+<p>&nbsp;</p>
+<h3 style="font-size: 36px;color: #009dff;"><span>خاتمة</span></h3>
+<p style="font-size: 22px; color: black;">يبدو من خلال المقال أعلاه الأهمية البالغة اللغة العربية لدى العرب والمسلمين إضافة إلى مكانتها حول العالم.</p>
+<p style="font-size: 22px; color: black;">وتصنف من بين اللغات الرسمية الستة في هيئة الأمم المتحدة وبأنها وسيلة للتواصل بين ملايين المواطنين العرب.</p>
+<p style="font-size: 22px; color: black;">وتعتبر لغة هامة لدى أكثر من مليار ونصف مواطن حول العالم ولا شك بأن ميزاتها تفوق بقية اللغات مما يجعلها اللغة الأصعب عالمياً.</p>
+<p>&nbsp;</p>      
+             </div>
+             <br>
+             <center><div style="align-items: center;background-color: white; align-items: center;">
+                <a href="sign%20up.html" target="_blank" style="color: #0652e2;font-size: 20px;"></a><br><br><h2 style="text-align: center; margin-bottom:  15px;">Comment</h2>
+                 <form style="width: 800px;
+                              border: 2px solid #000000; padding: 15px 10px; align-content: center;align-items: center; background-image:url(images/our_img4.jpg);height: 140px;"><br>
+                    <textarea placeholder="Add your comment" style="height: 20px;width: 100%;border: none;border-bottom: 2px solid #000000;background-color: transparent; margin-bottom: 10px;resize: none;outline: none;"></textarea>
+                     <div>
+                       <input type="submit" value="comment" style=" padding: 10px 15px;border: none;outline: none;border-radius:5px; background-color: #1f6dff;" dirname="">
+                         <button  style=" padding: 10px 15px;border: none;outline: none;border-radius:5px;padding-left: 5px;padding-right: 5px" >cancel</button>
+                     </div>
+                 </form>
+             </div></center>
+             
+      <footer>
+         <div class="footer">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12 ">
+                     <div class="cont">
+                        <h3> <strong class="multi"> M3lomty website</strong><br>
+                           Landing Page 2022
+                        </h3>
+                     </div>
+                  </div>
+                  <div class="col-md-12">
+                     <ul class="social_icon">
+                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></i></a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="copyright">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <p>© 2022 All Rights Reserved. Design by Abdallah  <a href="https://html.design/">  </a></p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      <!-- end footer -->
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+<script class="nav-item" ></script>
+ <script> Function alert ("your massage has been send");</script>
+<script>// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var what = document.getElementById("what");
+
+// Get the offset position of the navbar
+var sticky = what. offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    what .classList.remove("sticky");
+  }
+}</script>
+   </body>
+</html>

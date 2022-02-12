@@ -1,0 +1,458 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       <link rel="shortcut icon" type="images/png" href="images/download1.png">
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>M3lomty</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+   </head>
+   <!-- body -->
+   <style>
+       * {box-sizing: border-box}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+       .a7a
+           {color: aqua;font-size: 47px;padding: 0px;}
+           .white1{font-size: 49px;}
+           p.abc
+           {font-size:22px;}
+       .what{
+  overflow: hidden;
+  background-color: #333;
+           margin-top: 30px;display: block;
+}
+
+/* Navbar links */
+.head_top{
+  
+  
+  color: black;
+  
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+       a:hover{color: aqua;}
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.header {
+  
+  top: 0;
+  height: 110px;
+  width: 100%;
+    background-color: black;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.col-xl-9 col-lg-9 col-md-9 col-sm-9{
+  padding-top: 60px;
+}
+           .#{font-size:22px;}
+           li.nav-item{font-size:442px;}
+       a.#{font-size:44px}
+       .li{font-size: 33px} 
+       /* Hide scrollbar for Chrome, Safari and Opera */
+.example::-webkit-scrollbar {
+  display: none;
+}
+       .hiuouh{font-size: 22px;}
+/* Hide scrollbar for IE, Edge and Firefox */
+.example {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+       *{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  height: 1000px;
+}
+header{
+  
+  z-index: 2;
+  background-color: #333;
+}
+.header-inner{
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo{
+  color: #fff;
+  cursor: default;
+}
+.logo span{
+  color: #FFFF00;
+}
+.bars{
+  font-size: 26px;
+  color: #fff;
+  display: none;
+  cursor: pointer;
+  transition: color 0.6s ease;
+}
+.bars:hover{
+  color: #FFFF00;
+}
+.nav-link{
+  margin-left: 30px;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.6s ease;
+}
+.nav-link:hover{
+  color: #FFFF00;
+}
+.mobile-menu{
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: #222;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  pointer-events: none;
+}
+@media screen and (max-width: 768px){
+  .bars{
+    display: block;
+  }
+  
+  .nav-menu{
+    display: none;
+  }
+  
+  .active{
+  left: 0;
+  transition: left 0.6s ease-in-out;
+  }
+  
+  .nav-link{
+    font-size: 24px;
+    margin: 30px 0;
+  }
+    li.nav-item.hover{color: aqua;}
+     
+    </style>
+    </head>
+   <!-- body -->
+   <body class="main-layout">
+      <!-- loader  -->
+      
+      <!-- end loader -->
+      <!-- header -->
+      <header class="what">
+         <!-- header inner -->
+         <div  class="head_top">
+            <div class="header">
+               <div class="container-fluid">
+                  <div class="row">
+                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                        <div class="full">
+                           <div class="center-desk">
+                              <div class="logo">
+                                 <div class="a7a" style="color: #28eaa3;">M3lomty</div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                        <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                           <span class="navbar-toggler-icon"></span>
+                           </button>
+                           <div class="collapse navbar-collapse" id="navbarsExample04">
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<ul class="navbar-nav mr-auto">
+                                 <li class="nav-item" font_size="2200px">
+                                    <a class="nav-link" href="#contact"font_size="59px">اتصل بنا</a>
+                                 </li>
+                                 <li class="nav-item"font_size="59px">
+                                    <a class="nav-link" href="#about us"font_size="59px">منشوراتنا</a>
+                                 </li>
+                                 <li class="nav-item"font_size="59px">
+                                    <a class="nav-link" href="index.html" font_size="59px"> الرئيسية  </a>
+                                     
+                                 </li>
+                              </ul>
+                           </div>
+                        </nav>
+                     </div>
+                  </div>
+               </div>
+            </div><BR><BR>
+            <!-- end header inner -->
+            <!-- end header -->
+            
+             
+            <!-- banner -->
+            <section class="banner_main">
+               <div class="container">
+                  <div class="row d_flex">
+                     <div class=" col-xl-8 col-lg-8 col-md-8 col-12-9">
+                        <div class="text-bg">
+                           <h1 style="color: #28eaa3;">M3lomty<br><span class="white1">معلوماتك كلها هنا</span></h1>
+                           
+                        </div>
+                     </div>
+                     <div class="col-xl-4 col-lg-4 col-md-4 col-12-3">
+                        
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </div>
+      </header><br><br>
+      <!-- end banner -->
+                                      <div class="indexlnk_box"style="direction: rtl;font-size: 18px;text-align: right;padding: 19px;"><strong class="hdrbox" style="font-size: 24px;">فهرس الصفحة</strong>
+<p dir="RTL" style="direction: rtl;font-size: 18px;text-align: right;color: black;"><a href="#1" title="إيلون ماسك"    > .إيلون ماسك</a></p>
+
+<p dir="RTL" style="direction: rtl;font-size: 18px;text-align: right;color: black;"><a href="#2" title="جيف بيزوس"    >.جيف بيزوس</a></p>
+
+<p dir="RTL"style="direction: rtl;font-size: 18px;text-align: right;color: black;"><a href="#3" title="برنارد أرنو"    >.برنارد أرنو</a></p>
+
+<p dir="RTL"style="direction: rtl;font-size: 18px;text-align: right;color: black;"><a href="#4" title="مارك زوكربيرغ"    >.مارك زوكربيرغ</a></p>
+
+<p dir="RTL"style="direction: rtl;font-size: 18px;text-align: right;color: black;"><a href="#5" title="بيل غيتس"    >.بيل غيتس</a></p>
+
+<p dir="RTL" style="direction: rtl;font-size: 18px;text-align: right;color: black;"><a href="#6" title="لاري بيغ"    >.لاري بيغ.</a></p>
+
+<p dir="RTL"style="direction: rtl;font-size: 18px;text-align: right;color: black;"><a href="#7" title="لاري أليسون"    >.لاري أليسون</a></p>
+
+<p dir="RTL"style="direction: rtl;font-size: 18px;text-align: right;color: black;"><a href="#8" title="سيرجي برين"    >.سيرجي برين</a></p>
+
+<p dir="RTL"style="direction: rtl;font-size: 18px;text-align: right;color: black;"><a href="#9" title="وارن بافيت"    >.وارن بافيت</a></p>
+
+<p dir="RTL"style="direction: rtl;font-size: 18px;text-align: right;color: black;"><a href="#10" title="ستيف بالمر"    >.ستيف بالمر</a></p>
+</div>
+
+<p dir="RTL" style="direction: rtl;font-size: 18px;text-align: right;color: black;">كشفت وكالة بلومبرغ المختصة بحصر قائمة أكثر البشر ثراءً عن أغنى 10 رجال في العالم خلال عام 2022 والتي تكشف الثروات الطائلة التي يمتلكها عدد قليل من الأشخاص حول العالم.&nbsp;</p>
+
+<p dir="RTL" style="direction: rtl;font-size: 18px;text-align: right;color: black;">ونستعرض فيما يلي أغنى 10 رجال في العالم خلال عام 2021.&nbsp;</p>
+<br>
+<h2 dir="RTL" style="direction: rtl;font-size: 18px;text-align: right;"><a id="1" name="1" style="color: #28eaa3;">1- إيلون ماسك</a></h2>
+<img src="images/ma.jpg">
+<p dir="RTL" style="direction: rtl;font-size: 18px;text-align: right;color: black;">يعد إيلون ماسك هو أغنى رجال العالم وأكثر البشر ثراءً وتقارب ثروته حوالي 300 مليار دولار، ويعتبر إيلون ماسك هو الشخص الوحيد في التاريخ الذي تقترب ثروته من الـ300 مليار دولار.</p>
+
+<p dir="RTL" style="direction: rtl;font-size: 18px;text-align: right;color: black;">كما شهدت ثروة إيلون ماسك في عام 2021 زيادة كبيرة، وذلك بعد أن عقدت شركة تأجير السيارات هيرتز صفقة ضخمة مع شركته تسلا. حصدت الشركة 25 ملياراً و600 مليون دولار أمريكي، وهو أكبر يوم لها في سوق الأسهم.</p>
+
+<p dir="RTL" style="direction: rtl;font-size: 18px;text-align: right;color: black;">تبلغ الثروة الشخصية لإيلون ماسك حوالي 285 مليار دولار وفقاً لمؤشر بلومبيرغ للمليارديرات، بزيادة أكثر من 116 مليار دولار سنوياً حتى الآن.</p>
+<br>
+<h2 dir="RTL" style="direction: rtl;font-size: 18px;text-align: right;color: black;" style="color: #28eaa3;"><a id="2" name="2">2- جيف بيزوس</a></h2>
+<img src="images/aa.jpg">
+<p dir="RTL" style="direction: rtl;font-size: 18px;text-align: right;color: black;">تبلغ ثروة جيف بيزوس أكثر 200 مليار دولار وهو مؤسس شركة أمازون الشهيرة لمجال التسويق الإليكتروني بالإضافة إلى شركة بلو أوريغن الخاصة بالرحلات السياحية للفضاء وغيرها من الأمور المتعلقة بتكنولوجيا وصناعات صواريخ الفضاء.</p>
+<br>
+<h2 dir="RTL" style="direction: rtl;font-size: 18px;text-align: right;"><a id="3" name="3" style="color: #28eaa3;">3- برنارد أرنو</a></h2>
+<img src="images/aaa.jpg">
+<p dir="RTL" style="direction: rtl;font-size: 18px;text-align: right;color: black;">ويحتل برنارد أرنو رئيس مجلس إدارة شركة "<span dir="LTR">LVMH Moët Hennessy Louis Vuitton</span>" والرئيس التنفيذي للشركة المركز الثالث في قائمة أغنى رجال العالم وذلك بثروة تبلغ قيمتها 188.7 مليار دولار.</p>
+
+<p dir="RTL" style="direction: rtl;font-size: 18px;text-align: right;color: black;">وتعتبر شركة "<span dir="LTR">LVMH</span>" هي الشركة الأولى في العالم من حيث الملابس الفاخرة وذلك بحسب عائداتها.</p>
+
+<p dir="RTL" style="direction: rtl;font-size: 18px;text-align: right;">وتتنوع منتجات الشركة ما بين الملابس والسلع الجلدية الفاخرة والنبيذ والعطور ومستحضرات التجميل وكذلك الساعات والمجوهرات.</p>
+
+<p dir="RTL" style="direction: rtl;font-size: 18px;text-align: right;">واستطاع أرنو زيادة ثروته بشكل كبير في عام 2021 وذلك بالاستفادة من استعادة الطلب العالمي على السلع والمنتجات الفاخرة بعد التراجع الحاد في عام 2020 بسبب أزمات فيروس كورونا وتداعياته وما تسبب فيه من خسائر كبرى للشركات بسبب الإغلاق في كثير من دول العالم.</p>
+<br>
+<h2 dir="RTL" style="direction: rtl;font-size: 18px;text-align: right;"><a id="4" name="4">4- مارك زوكربيرغ</a></h2>
+<img src="images/mark.jpg">
+<p dir="RTL">ويظهر مارك زوكربيرغ مؤسس شركة "فيسبوك" ومالك كذلك تطبيقات إنستجرام وواتساب وغيرها في المركز الرابع بقائمة أغنى رجال العالم لعام 2021.</p>
+
+<p dir="RTL" style="direction: rtl;font-size: 18px;text-align: right;">واستطاع مارك زوكربيرغ أن يبقى في المركز الرابع بين قائمة أغنى رجال العالم بثروة وصلت قيمتها إلى 135.2 مليار دولار أمريكي.</p>
+<br>
+<h2 dir="RTL" style="direction: rtl;font-size: 18px;text-align: right;"><a id="5" name="5">5- بيل غيتس</a></h2>
+
+<p dir="RTL" style="direction: rtl;font-size: 18px;text-align: right;">وبرغم فقدان بيل غيتس للكثير من أمواله بسبب الطلاق وتبرعاته الخيرية فإنه لا يزال بحسب تقرير بلومبرغ هو صاحب المركز الخامس في قائمة أغنى رجال العالم.</p>
+
+<p dir="RTL" style="direction: rtl;font-size: 18px;text-align: right;">ويمتلك بيل غيتس ثروة تصل إلى 131.7 مليار دولار أمريكي، ليستمر بيل غيتس مؤسس شركة "مايكروسوفت" في قائمة أغنى رجال العالم لأكثر من عقدين من الزمان.</p>
+<br>
+<h2 dir="RTL" style="direction: rtl;font-size: 18px;text-align: right;"><a id="6" name="6">6- لاري بيغ</a></h2>
+
+<p dir="RTL" style="direction: rtl;font-size: 18px;text-align: right;">يعتبر لاري بيغ هو الشريك المؤسس لشركة غوغل، وبفضل الأرباح الكبيرة التي تحققها غوغل، وجد لاري بيغ لنفسه مكاناً ضمن قائمة أغنى رجال العالم ليحتل المرتبة السادسة برصيد 120.8 مليار دولار أمريكي.</p>
+
+<p dir="RTL" style="direction: rtl;font-size: 18px;text-align: right;">واستطاع لاري بيغ الوصول إلى هذه المكانة من خلال أرباحه الكبيرة من محرك البحث الأشهر في العالم.</p>
+
+<h2 dir="RTL" style="direction: rtl;font-size: 18px;text-align: right;"><a id="7" name="7">7- لاري أليسون</a></h2>
+
+<p dir="RTL" style="direction: rtl;font-size: 18px;text-align: right;">أما لاري أليسون صاحب شركة "أوراكل" فيأتي في المركز السابع عالمياً في قائمة الأثرياء وذلك بثروة ضخمة تبلغ 117.3 مليار دولار أمريكي.</p>
+
+<p dir="RTL" style="direction: rtl;font-size: 18px;text-align: right;">وارتفعت ثروة أليسون خلال عام 2021 وهو الأمر الذي جعله من أهم رجال العالم وأكثرهم ثراءً.</p>
+<br>
+<h2 dir="RTL" style="direction: rtl;font-size: 18px;text-align: right;"><a id="8" name="8">8- سيرجي برين</a></h2>
+
+<p dir="RTL" style="direction: rtl;font-size: 18px;text-align: right;">استطاع سيرجي برين الذي لم يتجاوز عمره الـ48 عاماً أن يمتلك ثروة ضخمة تصل إلى 116.4 مليار دولار أمريكي وهو ما يجعله ثامن أغنى رجال العالم.</p>
+
+<p dir="RTL" style="direction: rtl;font-size: 18px;text-align: right;">ويعتبر سيرجي برين هو عالم حاسوب أمريكي وتشارك مع لاري بيغ في تأسيس شركة غوغل الشهيرة.</p>
+<br>
+<h2 dir="RTL" style="direction: rtl;font-size: 18px;text-align: right;"><a id="9" name="9">9- وارن بافيت</a></h2>
+
+<p dir="RTL" style="direction: rtl;font-size: 18px;text-align: right;">يعتبر الملياردير وارين بافيت مؤسس شركة بيركشير هاثاوي هو تاسع أغنى رجال العالم في عام 2021، وذلك بثروة تصل إلى 100.8 مليار دولار أمريكي.</p>
+
+
+
+<p dir="RTL" style="direction: rtl;font-size: 18px;text-align: right;">ويعد وارن بافيت من أهم رجال الأعمال وأشهر المستثمرين في الولايات المتحدة الأمريكية وهو رئيس مجلس إدارة شركة بيركشير هاثاواي، كما كان رابع أغنى رجال العالم في عام 2020.</p>
+<br>
+<h2 dir="RTL" style="direction: rtl;font-size: 18px;text-align: right;"><a id="10" name="10">10- ستيف بالمر</a></h2>
+
+<p dir="RTL" style="direction: rtl;font-size: 18px;text-align: right;">يعد ستيف بالمر هو عاشر أغنى رجال وأثرياء العالم بثروة تصل في مجملها إلى حوالي 95 مليار دولار أمريكي.</p>
+
+<p dir="RTL" style="direction: rtl;font-size: 18px;text-align: right;">واستطاع بالمر الوصول إلى هذه المكانة بين أثرياء العالم دون تأسيس أي شركة، ولكنه تخصص في المساهمة في أكبر شركات العالم.</p>
+
+<p dir="RTL" style="direction: rtl;font-size: 18px;text-align: right;">وعمل بالمر في شركة مايكروسوفت خلال الفترة من عامي 2000 إلى 2014، قبل أن يمتلك أسهم في الكثير من الشركات الناجحة وهو ما زاد من ثروته بصورة كبيرة بدون أن يكون مساهماً في تأسيس أي منها.</p>
+
+                            
+                            
+                            
+                            
+                                                                                                                
+                        
+                        </div>
+      <footer>
+         <div class="footer">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12 ">
+                     <div class="cont">
+                        <h3> <strong class="multi"> M3lomty website</strong><br>
+                           Landing Page 2022
+                        </h3>
+                     </div>
+                  </div>
+                  <div class="col-md-12">
+                     <ul class="social_icon">
+                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></i></a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="copyright">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <p>© 2022 All Rights Reserved. Design by Abdallah  <a href="https://html.design/">  </a></p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      <!-- end footer -->
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+<script class="nav-item" ></script>
+ <script> Function alert ("your massage has been send");</script>
+<script>// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var what = document.getElementById("what");
+
+// Get the offset position of the navbar
+var sticky = what. offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    what .classList.remove("sticky");
+  }
+}</script>
+   </body>
+</html>

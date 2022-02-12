@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       <link rel="shortcut icon" type="images/png" href="images/download1.png">
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>M3lomty</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+   </head>
+   <!-- body -->
+   <style>
+       * {box-sizing: border-box}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+       .a7a
+           {color: aqua;font-size: 47px;padding: 0px;}
+           .white1{font-size: 49px;}
+           p.abc
+           {font-size:22px;}
+       .what{
+  overflow: hidden;
+  background-color: #333;
+           margin-top: 30px;display: block;
+}
+
+/* Navbar links */
+.head_top{
+  
+  
+
+  
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+       a:hover{color: aqua;}
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.header {
+  
+  top: 0;
+  height: 110px;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.col-xl-9 col-lg-9 col-md-9 col-sm-9{
+  padding-top: 60px;
+}
+           .#{font-size:22px;}
+           li.nav-item{font-size:442px;}
+       a.#{font-size:44px}
+       .li{font-size: 33px} 
+       /* Hide scrollbar for Chrome, Safari and Opera */
+.example::-webkit-scrollbar {
+  display: none;
+}
+       .hiuouh{font-size: 22px;}
+/* Hide scrollbar for IE, Edge and Firefox */
+.example {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+       *{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  height: 1000px;
+}
+header{
+  
+  z-index: 2;
+}
+.header-inner{
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo{
+  color: #fff;
+  cursor: default;
+}
+.logo span{
+  color: #FFFF00;
+}
+.bars{
+  font-size: 26px;
+  color: #fff;
+  display: none;
+  cursor: pointer;
+  transition: color 0.6s ease;
+}
+.bars:hover{
+  color: #FFFF00;
+}
+.nav-link{
+  margin-left: 30px;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.6s ease;
+}
+.nav-link:hover{
+  color: #FFFF00;
+}
+.mobile-menu{
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: #222;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  pointer-events: none;
+}
+@media screen and (max-width: 768px){
+  .bars{
+    display: block;
+  }
+  
+  .nav-menu{
+    display: none;
+  }
+  
+  .active{
+  left: 0;
+  transition: left 0.6s ease-in-out;
+  }
+  
+  .nav-link{
+    font-size: 24px;
+    margin: 30px 0;
+  }
+    li.nav-item.hover{color: aqua;}
+     
+    </style>
+    </head>
+   <!-- body -->
+   <body class="main-layout">
+      <!-- loader  -->
+      <div class="loader_bg">
+         <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+      </div>
+      <!-- end loader -->
+      <!-- header -->
+      <header class="what">
+         <!-- header inner -->
+         <div  class="head_top">
+            <div class="header">
+               <div class="container-fluid">
+                  <div class="row">
+                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                        <div class="full">
+                           <div class="center-desk">
+                              <div class="logo">
+                                 <div class="a7a">M3lomty</div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                        <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                           <span class="navbar-toggler-icon"></span>
+                           </button>
+                           <div class="collapse navbar-collapse" id="navbarsExample04">
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<ul class="navbar-nav mr-auto">
+                                 <li class="nav-item" font_size="2200px">
+                                    <a class="nav-link" href="#contact"font_size="59px">اتصل بنا</a>
+                                 </li>
+                                 <li class="nav-item"font_size="59px">
+                                    <a class="nav-link" href="#about us"font_size="59px">منشوراتنا</a>
+                                 </li>
+                                 <li class="nav-item"font_size="59px">
+                                    <a class="nav-link" href="index.html" font_size="59px"> الرئيسية  </a>
+                                     
+                                 </li>
+                              </ul>
+                           </div>
+                        </nav>
+                     </div>
+                  </div>
+               </div>
+            </div><BR><BR>
+            <!-- end header inner -->
+            <!-- end header -->
+            <!-- banner -->
+            <section class="banner_main">
+               <div class="container">
+                  <div class="row d_flex">
+                     <div class=" col-xl-8 col-lg-8 col-md-8 col-12-9">
+                        <div class="text-bg">
+                           <h1>M3lomty<br><span class="white1">معلوماتك كلها هنا</span></h1>
+                           
+                        </div>
+                     </div>
+                     <div class="col-xl-4 col-lg-4 col-md-4 col-12-3">
+                        
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </div>
+      </header>
+      <!-- end banner -->
+      <!-- blog_main -->
+       <br><BR>
+      <div style="text-align: right;">
+         <h1 style="font-size: 24px;color: #00d3d3;">من اخترع المال؟ رحلة سريعة في تاريخ القيمة التي ازدهرت بسببها حضارات وفنيت أخرى</h1>  <br><br>
+          <img src="images/istock-160372282-1170x600.webp"><br>
+          <br><p style="font-size: 20px;color: black">تنهار عملات وتزدهر أخرى، من المعادن إلى الورق ثم إلى العملات الافتراضية، هل فكرت يوماً من اخترع المال لأول مرة؟ أو من استخدم مفهوم المال كقيمة للشراء والبيع؟</p><br>
+          <p style="font-size: 20px;color: black">يعود تاريخ استخدام البشر للعملة إلى نحو 40000 سنة.</p>
+          <p style="font-size: 20px;color: black;" >تتبّع العلماء التبادل والتجارة من خلال السجل الأثري، بدءاً من العصر الحجري القديم الأعلى أو Upper Paleolithic عندما تداولت مجموعات من الصيادين للحصول على أفضل أسلحة الصوان وأدوات أخرى.</p>
+          <p style="font-size: 20px;color: black;">ولاً قام الناس بالمقايضة، وعقدوا صفقات مباشرة بين طرفين لأشياء يرغبون في الحصول عليها.<br><br><p style="font-size: 20px;">
+<P style="font-size: 20px;color: black;">
+جاء المال بعد ذلك بقليل، إذ تطور شكله على مدى آلاف السنين، من الأشياء الطبيعية إلى العملات المعدنية إلى الورق إلى الإصدارات الرقمية. </P><br><br>
+<P style="font-size: 20px;color: black;">
+ولكن مهما اختلف شكله، فقد استخدم البشر العملة منذ فترة طويلة كوسيلة للتبادل وطريقة للدفع ومعيار للقيم ومخزن للثروة ووحدة حساب.</p><br>
+          <h1 style="font-size: 26px;color:  #00d3d3;">لماذا احتاج الناس العملة؟</h1>
+       <h2 style="font-size: 23px;color: #00d3d3">هناك العديد من النظريات حول أصل النقود، ويرجع ذلك جزئياً إلى أن النقود لها وظائف عديدة:</h2>
+          <ol style="font-size: 24px;color: black;">
+             <li style="font-size: 20px;olor: black;">&nbsp;تسهّل التبادل كمقياس للقيمة_</li>
+              <li style="font-size: 20px;olor: black;"> تجمع المجتمعات المتنوعة معاً من  خلال تمكين تقديم الهدايا والمعاملة بالمثل &nbsp;_</li>
+              <li style="font-size: 20px;olor: black;">تقيم التسلسلات الهرمية الاجتماعية &nbsp;_</li>
+              <li style="font-size: 20px;olor: black;">وأخيراً: وسيلة لسلطة &nbsp;الدولة_</li>
+          </ol><br>
+          <p style="font-size: 20px;color: black;">من الصعب تحديد تاريخ التفاعلات التي تنطوي على أنواع مختلفة من العملات بدقة، ولكن الأدلة تشير إلى أنها نشأت من تبادل الهدايا وسداد الديون.</p><br>
+
+<p style="font-size: 20px;color: black;">ظهرت الأشياء التي نادراً ما تتوافر في الطبيعة والتي يمكن التحكم في تداولها بكفاءة، كوحدات ذات قيمة للتفاعلات والتبادل</p>. 
+<br>
+<p style="font-size: 20px;color: black;">وشملت الأصداف، مثل اللؤلؤ، عملة للتداول على نطاق واسع بالأمريكتين وفي إفريقيا وأوروبا وآسيا وأستراليا، بحسب ما قاله بروفيسور الأنثروبولوجيا شابوروكا موزيمبا.</p>
+<br><P style="font-size: 20px;color: black;">
+استخدم الناس أيضاً النحاس الأصلي وبقايا النيازك أو الحديد الأصلي والعنبر والنحاس والذهب والفضة وسبائك الرصاص بشكل مختلف كعملة. </P>
+<br><P style="font-size: 20px;color: black;">
+حتى إن الناس استخدموا الحيوانات الحية مثل الأبقار حتى وقت قريب نسبياً كشكل من أشكال العملة.</P><br>
+          <img src="images/timeline-of-mesopotamia-1024x479.jpg"><BR>
+          <h1 style="color: #00d3d3;font-size: 26px;">من اخترع المال؟</h1>
+          <p style="font-size: 18px;color: black;">ظهر شيكل بلاد ما بين النهرين- أول شكل معروف للعملة- منذ ما يقرب من 5000 عام.
+
+وعندما تم إنشاء المدن الأولى في بلاد ما بين النهرين (نحو 3000 قبل الميلاد)، ظهرت البنية التحتية لأبسط أشكال أموال الحساب؛ الائتمان المدعوم بالأصول أو الأموال التمثيلية. 
+<br><br>
+كان المزارعون يودعون حبوبهم في المعبد الذي يسجل الإيداع على ألواح من الطين ويعطون المزارع إيصالاً على شكل رمز من الصلصال يمكنهم استخدامه بعد ذلك لدفع الرسوم أو الديون الأخرى للمعبد. 
+<br><br>
+نظراً إلى أن الجزء الأكبر من الرواسب في المعبد كان من الشعير الأساسي، فقد تم استخدام كمية ثابتة من الشعير كوحدة حسابية.
+<br><br>
+في تلك الفترة كان النحاس يستخدم بالتجارة  ولكن سرعان ما حلّت الفضة مكانه.
+<br><br>
+حدد المعبد (الذي موّل وسيطر على معظم التجارة الخارجية) أسعار الصرف بين الشعير والفضة وسلع مهمة أخرى، مما أتاح الدفع باستخدام أي منهما. 
+<Br><br>
+كما أتاح الاستخدام المكثف للمحاسبة في إدارة الاقتصاد بأكمله، مما أدى إلى تطور الكتابة وبالتالي بداية التاريخ.
+<br><br>
+إلى ذلك، يعود تاريخ أقدم دار لسك العملة إلى 650 و600 قبل الميلاد في آسيا الصغرى، حيث استخدمت نخب ليديا وإيونيا الآرية -أشهر الأقاليم الغربية في آسيا الصغرى (تركيا حالياً)- عملات فضية وذهبية مختومة للدفع الجيوش.
+<br><br>
+يشير اكتشاف جحافل من العملات المعدنية من الرصاص والنحاس والفضة والذهب في جميع أنحاء العالم إلى أن العملات المعدنية- خاصة في أوروبا وآسيا وشمال إفريقيا- تم الاعتراف بها كوسيلة لأموال السلع في بداية الألفية الأولى بعد الميلاد.
+<br><br>
+كما أن الانتشار الواسع للعملات المعدنية الرومانية والإسلامية والهندية والصينية يشير إلى تجارة تعود إلى 1250 ق.م – 1450م.</p>
+            <br>  <h1 style="font-size: 26px;color: #1fe8e8;">قابلة للنقل ومتينة</h1><br>
+          <p style="font-size: 18px;color: black;">يعود الفضل في نجاح العملات المعدنية، إلى حد كبير ،إلى قابليتها للنقل والمتانة وديمومتها والقيمة المتأصلة فيها، بحسب الدراسات التاريخية الأكاديمية.<br><br>
+
+إضافة إلى ذلك، يمكن للقادة السياسيين التحكم في إنتاج العملات المعدنية- من التعدين والصهر والسك- إضافة إلى تداولها واستخدامها. <br><br>
+
+نجحت الأشكال الأخرى من الثروة والمال، مثل الأبقار، في خدمة المجتمعات الرعوية، ولكن لم يكن من السهل نقلها، وبالطبع كانت عرضة للكوارث البيئية.
+<br><br>
+وسرعان ما أصبح المال أداة للسيطرة السياسية، يمكّن الحاكم من استخراج الضرائب لدعم النخبة والدفع للجيوش. 
+
+ومع ذلك، يمكن أن يعمل المال أيضاً كقوة استقرار تعزز التبادل السلمي للسلع والمعلومات والخدمات داخل المجموعات وفيما بينها.
+<br><br>
+كما ربطت تجارة طريق الحرير البحري، التي حدثت بين عامي 700 و1450 بعد الميلاد، الأوروبيين والآسيويين والأفارقة في تجارة عالمية ثورية.<br><br></p>
+          <h1 style="font-size: 26px;color: #00d3d3; ">حرب العملات</h1>
+          <p style="font-size: 18px;color: black;">لعب المال دوراً هاماً في كل حرب منذ نشأتها حيث تلاعب الملوك القدماء بنسب المعادن الثمينة في كل عملاتهم المعدنية لإنشاء المزيد من المال وذلك لحشد الجيوش كما حاول أسياد الإقطاعيين تقويض خزائن منافسيهم من إقطاعيين آخرين وحاول المزورون تقليدها عبر التاريخ، ومع ذلك فإن أشهر حرب للعملات تلك التي جرت بين الإمبراطورية البريطانية ومستعمراتها في أمريكا.<br><br>
+
+في القرن السابع عشر كانت إنكلترا مصرة على السيطرة على كل من المستعمرات الأمريكية والمصادر الطبيعية التي تسيطر عليها، وللقيام بذلك حدد الإنكليز المعروض من المال وأقروا إنه من غير القانوني للمستعمرات القيام بصك أو طباعة نقود معدنية خاصة بهم وبدلاً عن ذلك أُجبِرَت المستعمرات على التجارة باستخدام أوراق العملات الإنكليزية للتبادل بحيث لا يمكن استبدالها إلا بالبضائع الإنكليزية، حيث كان يتم الدفع للمستعمرين مقابل بضائعهم بذات الأوراق المالية وبالتالي فعلياً لم يتمكنوا من التعامل بالتجارة مع دول أخرى.
+<br><br>
+ورداً على ذلك عادت المستعمرات مرةً أخرى إلى الوراء مستخدمةً نظام المقايضة من خلال الذخيرة والتبغ والمسامير والفراء وكل ما يمكن أن يتم التداول به وأيضا جمع المستعمرون كل ما يستطيعون من عملات أجنبية الأكثر شعبية لتبدو أكبر مثل الفضة والدولار الإسباني الكبير الحجم، حيث كانت تسمى ثُمانية الأجزاء لأنه عندما كان يريد أحد ما دفع «فراطة» كان يتوجب عليه أن يسحب سكينته ويقسمها إلى ثمانية قطع صغيرة، ومن هنا جاء تعبير (قطعتان صغيرتان) والمقصود بها ربع من الدولار.
+<br><br>
+كانت ماساشوستس أول مستعمرة تتحدى بريطانيا، حيث قامت في عام 1652 بصكِّ نقودها المعدنية الفضية الخاصة بها متضمنة شجرة الصنوبر وشجرة السنديان وتحدّوا من خلالها القانون البريطاني الذي كان يرفض أن يتم إصدار العملات إلا من قبل إمبراطور بريطانيا وقاموا بوضع كل عملاتهم بتاريخ 1652 – وهي الفترة التي لم يكن في حينها أيّ ملك-، وفي عام 1690 أصدرت ولاية ماساشوستس أول ورقة مالية خاصة بها أطلقت عليها اسم أوراق الدين.<br><br></p>
+      </div><!--  footer -->
+      <footer>
+         <div class="footer">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12 ">
+                     <div class="cont">
+                        <h3> <strong class="multi"> M3lomty website</strong><br>
+                           Landing Page 2022
+                        </h3>
+                     </div>
+                  </div>
+                  <div class="col-md-12">
+                     <ul class="social_icon">
+                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></i></a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="copyright">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <p>© 2022 All Rights Reserved. Design by Abdallah  <a href="https://html.design/">  </a></p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      <!-- end footer -->
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+<script class="nav-item" ></script>
+ <script> Function alert ("your massage has been send");</script>
+<script>// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var what = document.getElementById("what");
+
+// Get the offset position of the navbar
+var sticky = what. offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    what .classList.remove("sticky");
+  }
+}</script>
+   </body>
+</html>
+
